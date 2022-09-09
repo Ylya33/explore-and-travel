@@ -1,0 +1,116 @@
+/*base styles*/
+*{
+     box-sizing: border-box;
+}
+
+/* typography */
+
+h1, .h1 {
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 80px;
+    color: #202336;
+}
+
+h2, .h2 {
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 50px;
+    color: #000000; 
+}
+
+h3, .h3 {
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    color: #202336;
+}
+h4, .h4 {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 30px;
+    color: #000000;
+}
+
+p {
+    font-family: 'Mulish';
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 30px;
+    color: #7D7987;
+}
+
+figcaption {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    color: rgba(128, 145, 142, 1);
+}
+figcaption span {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 25px;
+    color: #042521;
+}
+blockquote, q {
+    font-family: 'Mulish';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+}
+
+cite {
+    font-family: 'Inter'; 
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 48px;
+    color: rgba(0, 0, 0, 0.85);
+}
+cite span {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 48px;
+    color: #000000;
+}
+/* Style buttons */
+
+button, .button, input[type=button], input[type=submit] {
+     background: #FB8F1D;
+     border-radius: 8px;
+     text-decoration: none;
+     cursor: pointer;
+     font-family: 'Inter';
+     font-style: normal;
+     font-weight: 600;
+     font-size: 16px;
+     line-height: 46px;
+     color: #FFFFFF;
+     display: inline-block;
+     padding: 0 38px;
+     min-width: 164px;
+     border: 1px solid #FB8F1D;
+
+}
+
+button.transparent, .button.transparent, input[type=button].transparent, input[type=submit].transparent {
+    background: transparent;
+    color: #FB8F1D;
+    border-radius: 8px;
+}
+
+a {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 60px;
+    text-decoration: none;
+    color: #FB8F1D;
+}
