@@ -1,6 +1,16 @@
 /*base styles*/
 *{
+     margin: 0;
+     padding: 0;
      box-sizing: border-box;
+}
+
+.section-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1220px;
+    margin: 0 auto;
 }
 
 /* typography */
@@ -152,3 +162,52 @@ a.view-all::after {
 a.view-all:hover {
     padding-right: 15px;
 }
+
+/* header*/
+header {
+    
+    position: fixed;
+    width: 100%;
+    padding: 43px 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+.menu, .buttons {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.menu li a {
+    padding:  8px 17px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #B8BECD;
+}
+
+.menu li a:hover{
+    color: #4b6ec7;
+}
+
+
+.menu li a.active { 
+    font-weight: 500;
+    color: #202336;
+}
+
+.buttons li {
+    margin-left: 18px;
+}
+
+.buttons li button {
+    min-width: 132px;
+    padding: 0 36px;
+    font-size: 15px;
+    line-height: 42px;
+}
+ 
