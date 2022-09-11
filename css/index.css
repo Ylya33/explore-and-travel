@@ -98,6 +98,10 @@ button, .button, input[type=button], input[type=submit] {
      border: 1px solid #FB8F1D;
 
 }
+button:hover, .button:hover, input[type=button]:hover, input[type=submit]:hover {
+    background: #fd9e39;
+    border-color: fd9e39;
+}
 
 button.transparent, .button.transparent, input[type=button].transparent, input[type=submit].transparent {
     background: transparent;
@@ -105,12 +109,46 @@ button.transparent, .button.transparent, input[type=button].transparent, input[t
     border-radius: 8px;
 }
 
+button.transparent:hover, .button.transparent:hover, input[type=button].transparent:hover, input[type=submit].transparent:hover {
+    background: #FB8F1D;
+    color: #FFFFFF;
+}
+
 a {
     font-family: 'Inter';
-    font-style: normal;
     font-weight: 600;
-    font-size: 17px;
-    line-height: 60px;
+    font-size: 15px;
+    line-height: 28px;
     text-decoration: none;
     color: #FB8F1D;
+}
+
+a:hover{
+    color: #ffad56;
+}
+
+a.view-all {
+    display: inline-block;
+    font-size: 17px;
+    line-height: 60px;
+    position: relative;
+    padding-right: 11px;
+}
+a.view-all::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    right: 0;
+    display: block;
+    background-image: url(../img/arrow.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    width: 10px;
+    height: 10px;
+    transform: translateX(100%);
+} 
+
+a.view-all:hover {
+    padding-right: 15px;
 }
