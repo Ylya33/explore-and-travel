@@ -204,7 +204,7 @@ nav {
     margin-left: 18px;
 }
 
-.buttons li button {
+.buttons li button, bbutton.transparent  {
     min-width: 132px;
     padding: 0 36px;
     font-size: 15px;
