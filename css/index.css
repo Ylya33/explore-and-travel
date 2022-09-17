@@ -6,6 +6,7 @@
 }
 
 .section-container {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -13,21 +14,14 @@
     margin: 0 auto;
     padding-left: 60px;
     padding-right: 60px;
-    padding-top: 167p;
-}
-.text-form-wrapper {
-    padding-left: 0px;
 }
 
-section {
-    padding-top: 167;
-}
 
 
 /* typography */
 
 h1, .h1 {
-    margin-bottom: 74px;
+    margin-bottom: 71px;
     font-family: 'Playfair Display';
     font-weight: 700;
     font-size: 64px;
@@ -175,13 +169,6 @@ a.view-all:hover {
     padding-right: 15px;
 }
 
-.png {
-    margin-top: 167px;
-    margin-right: 105px;
-    padding-left: 147px;
-
-}
-
 .element {
     width: 26px;
     height: 26px;
@@ -190,9 +177,6 @@ a.view-all:hover {
 }
 
 /*form*/
-form {
-    padding-top: 48px;
-}
 
 fieldset {
     display: flex;
@@ -200,41 +184,26 @@ fieldset {
     border: 0;
 }
 
-fieldset .select-wrapper {
-    position: relative;
-    margin-right: 30px;
-}
-
-fieldset .select-wrapper::after {
-    content: '';
-      display: block;
-
-    position: absolute;
-    top: 50%;
-    width: 32px;
-    height: 2px;
-    left: 191px;
-    top: 482px;
-    background: #202336;
-    border-radius: 4px;
-
+.select-wrapper {
+    padding-right: 30px;
 }
 
 select {
-    
-width: 220px;
-padding: 0 30px;  
-border: 1px solid #AFB0B9;
-border-radius: 6px; 
-outline: none;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 15px;
-line-height: 32px;
-color: #4A4C53;
-background: #E5E5E5;
+    width: 220px;
+    padding: 0 30px;  
+    border: 1px solid #AFB0B9;
+    border-radius: 6px; 
+    outline: none;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 50px;
+    color: #4A4C53;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
+
 
 
 
@@ -286,4 +255,66 @@ nav {
     font-size: 15px;
     line-height: 42px;
 }
- 
+
+
+/* form-and-image */
+form {
+    margin-bottom: 16px;
+    margin-top: 49px;
+}
+
+.form-and-image{
+    padding-top: 167px;
+    padding-bottom: 143px;
+}
+.text-form-wrapper {
+    margin-left: 4px;
+}
+
+.form-and-image h2.h3 {
+    position: relative;
+    padding-bottom: 22px;
+}
+
+.form-and-image h2.h3::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 32px;
+    height: 2px;
+    background: #202336;
+    border-radius: 4px;
+
+}
+.form-and-image button{
+    min-width: 180px;
+    margin-top: 16px;
+    font-family: 'Mulish';
+    font-weight: 700;
+    font-size: 17px;
+}
+.form-and-image .main-picture {
+    position: relative;
+    right: -78px;
+    max-width: 680px;
+}
+.form-and-image .shape {
+    position: absolute;
+}
+
+.form-and-image .big-circle {
+    top: 50%;
+    left: -43px;
+    max-width: 26px;
+}
+.form-and-image .small-circle {
+    top: 94%;
+    left: 45%;
+    max-width: 20px;
+}
+.form-and-image .cross {
+    top: 8%;
+    left: 39.39%;
+}
