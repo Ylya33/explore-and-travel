@@ -52,13 +52,6 @@ h4, .h4 {
     color: #000000;
 }
 
-:root {
-    --main-font-family: 'Mulish';
-    --main-weight: 300;
-    --main-font-size: 17px;
-    --main-color: #7D7987;
-}
-
 p {
     font-family: 'Mulish';
     font-weight: 300;
@@ -211,19 +204,6 @@ select {
     appearance: none;
 }
 
-.select-wrapper select::after {
-    content: "";
-    position: absolute;
-    top: 26px;
-    right: 81px;
-    display: block;
-    background-image: url(../img/vector.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 50% 50%;
-    width: 10px;
-    height: 6px;
-}
 
 
 
@@ -330,34 +310,6 @@ form {
     max-width: 26px;
 }
 .form-and-image .small-circle {
-    top: 94%;
-    left: 45%;
-    max-width: 20px;
-}
-.form-and-image .cross {
-    top: 8%;
-    left: 39.39%;
-}
-
-/* image and text*/
-.image-and-text{
-    padding-top: 143px;
-}
-.image-and-text-reverse {
-padding-top: 116px;
-padding-bottom: 124px;
-}
-.image-and-text-reverse .section-container {
-    flex-direction: row-reverse;
-}
-.text-wrapper {
-    Width: 450px;
-}
-.text-wrapper p {
-    padding-top: 20px;
-    padding-bottom: 33px;
-}
-.form-and-image .circle {
     top: 94%;
     left: 45%;
     max-width: 20px;
