@@ -357,12 +357,24 @@ padding-bottom: 124px;
     padding-top: 20px;
     padding-bottom: 33px;
 }
-.form-and-image .circle {
-    top: 94%;
-    left: 45%;
-    max-width: 20px;
+
+.image-and-text .main-picture {
+    position: relative;
+    left: -45px;
+    top: -8px;
 }
-.form-and-image .cross {
-    top: 8%;
-    left: 39.39%;
+
+ .image-and-text .shape {
+    position: absolute;
+}
+
+.image-and-text .circle {
+    left: 81.5%;
+    top: 66%;
+    max-width: 21px;
+} 
+
+.image-and-text .cross {
+    top: -4%;
+    left: 52%;
 }
