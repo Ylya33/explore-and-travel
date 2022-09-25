@@ -1,3 +1,11 @@
+/*variables*/
+
+:root {
+    --main-font-family: 'Mulish';
+    --main-weight: 300;
+    --main-font-size: 17px;
+    --main-color: #7D7987;
+}
 /*base styles*/
 *{
      margin: 0;
@@ -52,12 +60,7 @@ h4, .h4 {
     color: #000000;
 }
 
-:root {
-    --main-font-family: 'Mulish';
-    --main-weight: 300;
-    --main-font-size: 17px;
-    --main-color: #7D7987;
-}
+
 
 p {
     font-family: 'Mulish';
@@ -193,6 +196,7 @@ fieldset {
 
 .select-wrapper {
     padding-right: 30px;
+    position: relative;
 }
 
 select {
@@ -211,11 +215,11 @@ select {
     appearance: none;
 }
 
-.select-wrapper select::after {
+.select-wrapper::after {
     content: "";
     position: absolute;
-    top: 26px;
-    right: 81px;
+    top: 24px;
+    right: 61px;
     display: block;
     background-image: url(../img/vector.svg);
     background-repeat: no-repeat;
@@ -238,6 +242,8 @@ header {
 nav {
     display: flex;
     align-items: center;
+    position: relative;
+    left: 9px;
 }
 .menu, .buttons {
     display: flex;
@@ -266,6 +272,8 @@ nav {
 
 .buttons li {
     margin-left: 18px;
+    position: relative;
+    left: 12px;
 }
 
 .buttons li button {
@@ -275,6 +283,7 @@ nav {
     font-size: 15px;
     line-height: 42px;
 }
+
 
 
 /* form-and-image */
@@ -288,7 +297,7 @@ form {
     padding-bottom: 143px;
 }
 .text-form-wrapper {
-    margin-left: 4px;
+    margin-left: 10px;
 }
 
 .form-and-image h2.h3 {
@@ -308,17 +317,17 @@ form {
     border-radius: 4px;
 
 }
-.form-and-image button{
+.form-and-image button {
     min-width: 180px;
     margin-top: 16px;
     font-family: 'Mulish';
     font-weight: 700;
     font-size: 17px;
+
 }
 .form-and-image .main-picture {
     position: relative;
-    right: -78px;
-    max-width: 680px;
+    right: -92px;
 }
 .form-and-image .shape {
     position: absolute;
@@ -330,13 +339,13 @@ form {
     max-width: 26px;
 }
 .form-and-image .small-circle {
-    top: 94%;
-    left: 45%;
+    top: 93.9%;
+    left: 45.7%;
     max-width: 20px;
 }
 .form-and-image .cross {
     top: 8%;
-    left: 39.39%;
+    left: 40%;
 }
 
 /* image and text*/
@@ -352,6 +361,9 @@ padding-bottom: 124px;
 }
 .text-wrapper {
     Width: 450px;
+    position: relative;
+    left: -50px;
+    top: -11px;
 }
 .text-wrapper p {
     padding-top: 20px;
@@ -360,8 +372,8 @@ padding-bottom: 124px;
 
 .image-and-text .main-picture {
     position: relative;
-    left: -45px;
-    top: -8px;
+    left: -41px;
+    top: 0px;
 }
 
  .image-and-text .shape {
@@ -369,12 +381,45 @@ padding-bottom: 124px;
 }
 
 .image-and-text .circle {
-    left: 81.5%;
-    top: 66%;
+    left: 72.5%;
+    top: 83%;
     max-width: 21px;
 } 
 
 .image-and-text .cross {
-    top: -4%;
-    left: 52%;
+    top: -34%;
+    left: -16%;
+}
+.text-form-wrapper .explore {
+    position: relative;
+    top: 2px;
+    left: -1px;
+}
+
+.text-wrapper .button {
+    position: relative;
+    top: 7px;
+}
+
+/*featured-destination*/
+
+.featured-destination {
+    padding-top: 146px;
+    padding-bottom: 116px;
+    padding-left: 240px;
+}
+
+.grid-body {
+
+display: grid;
+  grid-template-columns: 260px 180px 180px 250px;
+  grid-template-rows: 337px;
+  grid-gap: 10px;
+  padding-top: 56px;
+}
+
+.item {
+    color: white;
+    padding: 1.5em 0;
+    font-size: 2em;
 }
