@@ -84,6 +84,7 @@ figcaption span {
     line-height: 25px;
     color: #042521;
 }
+
 blockquote, q {
     font-family: 'Mulish';
     font-weight: 400;
@@ -109,7 +110,7 @@ cite span {
 /* Style buttons */
 
 button, .button, input[type=button], input[type=submit] {
-     background: #FB8F1D;
+     background-color: #FB8F1D;
      border-radius: 8px;
      text-decoration: none;
      cursor: pointer;
@@ -126,8 +127,7 @@ button, .button, input[type=button], input[type=submit] {
 
 }
 button:hover, .button:hover, input[type=button]:hover, input[type=submit]:hover {
-    background: #fd9e39;
-    border-color: fd9e39;
+    border-color: #fd9e39;
 }
 
 button.transparent, .button.transparent, input[type=button].transparent, input[type=submit].transparent {
@@ -159,25 +159,25 @@ a.view-all {
     font-size: 17px;
     line-height: 60px;
     position: relative;
-    padding-right: 11px;
+    padding-right: 126px;
 }
 a.view-all::after {
     content: "";
     position: absolute;
     top: 25px;
-    right: 0;
+    right: 125px;
     display: block;
     background-image: url(../img/arrow.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 50% 50%;
-    width: 10px;
-    height: 10px;
+    width: 25px;
+    height: 15px;
     transform: translateX(100%);
 } 
 
 a.view-all:hover {
-    padding-right: 15px;
+    padding-right: 125px;
 }
 
 .element {
@@ -380,16 +380,16 @@ form {
     width: 440px;
     position: relative;
     left: -70px;
-    top: -26px;
+    top: -21px;
 }
 .image-and-text .text-wrapper p {
     padding-top: 20px;
-    padding-bottom: 33px;
+    padding-bottom: 39px;
 }
 
 .image-and-text .main-picture {
     position: relative;
-    left: -46px;
+    left: -44px;
     top: -13px;
 }
 
@@ -398,8 +398,8 @@ form {
 }
 
 .image-and-text .circle {
-    left: 72.5%;
-    top: 83%;
+    left: 73.5%;
+    top: 81%;
     max-width: 21px;
 } 
 
@@ -407,6 +407,7 @@ form {
     top: -34%;
     left: -16%;
 }
+
 .image-and-text .text-form-wrapper .explore {
     position: relative;
     top: 2px;
@@ -415,7 +416,38 @@ form {
 
 .image-and-text .text-wrapper .button {
     position: relative;
-    top: 3px;
+    top: -2px;
+}
+
+.image-and-text-reverse .text-wrapper {
+    width: 440px;
+    position: relative;
+    left: -79px;
+    top: -19px;
+}
+
+.image-and-text-reverse .main-picture {
+    position: relative;
+    top: -49px;
+    left: -43px;
+}
+
+.image-and-text-reverse .circle {
+    position: relative;
+    top: -205px;
+    left: 32px;
+    width: 20px;
+}
+.image-and-text-reverse .cross {
+    position: relative;
+    left: 468px;
+    top: 130px;
+    transform: scaleX(-1);
+}
+
+.image-and-text-reverse .text-wrapper p {
+    padding-top: 20px;
+    padding-bottom: 39px;
 }
 
 /*featured-destination*/
@@ -424,7 +456,6 @@ form {
     padding-top: 123px;
     padding-bottom: 116px;
     position: relative;
-    left: 55px;
 }
 
 .featured-destination .section-container {
@@ -435,6 +466,9 @@ form {
 .featured-destination .title-wrapper {
     display: flex;
     justify-content: space-between;
+    position: relative;
+    left: 54px;
+
 }
 
 .featured-destination .locations {
@@ -446,17 +480,14 @@ form {
   list-style: none;
 }
 
-
-
 .featured-destination figure {
     position: relative;
 }
 
 .featured-destination figure img {
-    max-width: 100%;
+    width: 100%;
     border-radius: 8px;
 }
-
 
 .featured-destination figcaption {
     position: absolute;
@@ -473,7 +504,7 @@ form {
 
 .testimonials {
     padding-top: 124px;
-    padding-bottom: 89px;
+    padding-bottom: 143px;
 }
 
 .testimonials .section-container {
@@ -485,43 +516,71 @@ form {
     max-width: 100%;
 }
 
-.select-wrapper::after {
-    content: "";
-    position: absolute;
-    top: 24px;
-    right: 61px;
-    display: block;
-    background-image: url(../img/vector.svg);
+.slick-arrow {
+    font-size: 0;
+    background-image: url(../img/vector2.svg); 
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 50% 50%;
-    width: 4px;
+    background-color: #FFFFFF;
+    width: 9px;
     height: 9px;
-}
+    border-radius: 50%;
+    padding: 18px;
+    min-width: 0;
+    background-position: 50%;
+    border: 2px solid #000000;
     
-.ellipse {
-    position: relative;
-    top: 506px;
 }
 
-.testimonials .left {
-    position: relative;
-    left: 1665px;
+.slick-arrow:hover {
+    border-color: #000000;
 }
-.testimonials .right {
-    padding-left: 22px;
-    right: -1664px;
+.slick-prev {
+    transform: scaleX(-1);
 }
-.testimonials .right::after {
-    content: "";
-    position: absolute;
-    top: 506px;
-    right: -1664px;
-    display: block;
-    background-image: url(../img/vector2.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 50% 50%;
-    width: 4px;
-    height: 9px;
-    }
+.testimonials .container {
+    display: flex;
+    justify-content: space-between;
+}
+.testimonials .text-wrapper {
+    width: 440px;
+}
+
+/* trending-stories */
+
+.trending-stories {
+    padding-top: 143px;
+    padding-bottom: 136px;
+}
+.trending-stories .section-container {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.trending-stories .title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+.trending-stories .activities {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 20px;
+    margin-top: 56px;
+    list-style: none;
+  }
+
+.trending-stories li img {
+    width: 100%;
+    border-radius: 8px;
+    max-height: 233px;
+}
+
+.activities span {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+    color: rgba(125, 121, 135, 1);
+    width: 266px;
+    max-height: 78px;
+}
