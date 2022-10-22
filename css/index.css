@@ -158,14 +158,12 @@ a.view-all {
     display: inline-block;
     font-size: 17px;
     line-height: 60px;
-    position: relative;
-    padding-right: 126px;
 }
 a.view-all::after {
     content: "";
     position: absolute;
     top: 25px;
-    right: 125px;
+    right: 129px;
     display: block;
     background-image: url(../img/arrow.svg);
     background-repeat: no-repeat;
@@ -177,7 +175,7 @@ a.view-all::after {
 } 
 
 a.view-all:hover {
-    padding-right: 125px;
+    padding-right: 5px;
 }
 
 .element {
@@ -309,9 +307,8 @@ form {
     padding-bottom: 143px;
 }
 .text-form-wrapper {
-    margin-left: 10px;
+    margin-left: 5px;
     position: relative;
-    left: -5px;
     top: -5px;
 }
 
@@ -461,22 +458,15 @@ form {
 .featured-destination .section-container {
     flex-direction:column;
     align-items: stretch;
-    padding-left: 59px;
-    padding-right: 172px;
+
 }
 
 .featured-destination .title-wrapper {
     display: flex;
     justify-content: space-between;
-    position: relative;
-    left: 55px;
-    top: 2px;
-}
-.featured-destination a.view-all {
-    padding-right: 16px;
-}
-.featured-destination a.view-all::after {
-    right: 13px;
+    margin-left: 54px;
+    max-width: 1094px;
+    
 }
 
 .featured-destination .locations {
@@ -485,6 +475,8 @@ form {
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 25px;
   margin-top: 56px;
+  margin-left: 0;
+  margin-right: auto;
   list-style: none;
 }
 
@@ -551,6 +543,7 @@ form {
 .testimonials .container {
     display: flex;
     justify-content: space-between;
+    flex-direction: row-reverse;
 }
 .testimonials .text-wrapper {
     width: 440px;
@@ -572,9 +565,8 @@ form {
 .trending-stories .title-wrapper {
     display: flex;
     justify-content: space-between;
-    position: relative;
-    left: 55px;
-    top: 11px;
+    margin-left: 54px;
+    max-width: 1093px;
     
 }
 
@@ -582,35 +574,30 @@ form {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 20px;
-    margin-top: 56px;
     list-style: none;
     max-width: 91%;
-    position: relative;
-    left: 55px;
+    margin: 56px auto 0;
   }
 
 .trending-stories li img {
     width: 100%;
     border-radius: 8px;
-    max-height: 241px;
-    padding-bottom : 13px;
+    height: 233px;
+    width: 261px;
+    object-fit: cover;
+    object-position: top;
 }
 
-.activities span {
+.activities h4 {
+    max-width: 252px;
+}
+
+.activities p {
     font-weight: 400;
     font-size: 15px;
     line-height: 26px;
     color: rgba(125, 121, 135, 1);
-    padding-top: 13px;
+    margin-top: 13px;
+    margin-bottom: 23px;
     
-}
-
-.trending-stories .text1 {
-    width: 240px;
-    padding-bottom: 23px;
-}
-
-.trending-stories .text2 {
-    width: 262px;
-    padding-bottom: 23px;
 }
