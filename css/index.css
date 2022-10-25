@@ -226,6 +226,7 @@ select {
     background-position: 50% 50%;
     width: 10px;
     height: 6px;
+    pointer-events: none;
 }
 
 
@@ -296,10 +297,8 @@ nav .buttons {
 /* form-and-image */
 form {
     margin-bottom: 16px;
-    margin-top: 49px;
-    position: relative;
-    left: 2px;
-    top: -2px;
+    margin-top: 47px;
+    margin-left: 2px;
 }
 
 .form-and-image{
@@ -308,8 +307,7 @@ form {
 }
 .text-form-wrapper {
     margin-left: 5px;
-    position: relative;
-    top: -5px;
+    margin-top: -5px;
 }
 
 .form-and-image h2.h3 {
@@ -331,6 +329,7 @@ form {
 }
 .form-and-image button {
     min-width: 180px;
+    height: 52px;
     margin-top: 16px;
     font-family: 'Mulish';
     font-weight: 700;
@@ -375,19 +374,20 @@ form {
 }
 .image-and-text .text-wrapper {
     width: 440px;
-    position: relative;
-    left: -70px;
-    top: -21px;
+    margin-right: 71px;
 }
+.image-and-text h2, .h2 {
+    margin-top: -51px;
+}
+
 .image-and-text .text-wrapper p {
-    padding-top: 20px;
-    padding-bottom: 39px;
+    margin-top: 0px;
+    margin-bottom: -1px;
 }
 
 .image-and-text .main-picture {
-    position: relative;
-    left: -44px;
-    top: -13px;
+    margin-top: -11px;
+    margin-left: -47px;
 }
 
  .image-and-text .shape {
@@ -406,14 +406,12 @@ form {
 }
 
 .image-and-text .text-form-wrapper .explore {
-    position: relative;
-    top: 2px;
-    left: -1px;
+    margin-top: 2px;
+    margin-left: -1px;
 }
 
 .image-and-text .text-wrapper .button {
-    position: relative;
-    top: -2px;
+    
 }
 
 .image-and-text-reverse .text-wrapper {
