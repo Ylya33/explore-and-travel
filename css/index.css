@@ -302,12 +302,13 @@ form {
 }
 
 .form-and-image{
-    padding-top: 167px;
+    padding-top: 164px;
     padding-bottom: 143px;
 }
 .text-form-wrapper {
-    margin-left: 5px;
-    margin-top: -5px;
+    margin-left: 4px;
+    margin-bottom: 1px;
+    margin-right: 106px;
 }
 
 .form-and-image h2.h3 {
@@ -337,9 +338,7 @@ form {
 
 }
 .form-and-image .main-picture {
-    position: relative;
-    right: -80px;
-    top: -4px;
+    
 }
 .form-and-image .shape {
     position: absolute;
@@ -375,19 +374,20 @@ form {
 .image-and-text .text-wrapper {
     width: 440px;
     margin-right: 71px;
+    margin-bottom: 93px;
 }
 .image-and-text h2, .h2 {
-    margin-top: -51px;
+    margin-bottom: ;
 }
 
 .image-and-text .text-wrapper p {
-    margin-top: 0px;
-    margin-bottom: -1px;
+    margin-top: ;
+    margin-bottom: ;
 }
 
 .image-and-text .main-picture {
-    margin-top: -11px;
-    margin-left: -47px;
+    margin-top: ;
+    margin-left: ;
 }
 
  .image-and-text .shape {
@@ -406,8 +406,8 @@ form {
 }
 
 .image-and-text .text-form-wrapper .explore {
-    margin-top: 2px;
-    margin-left: -1px;
+    margin-top: ;
+    margin-left: ;
 }
 
 .image-and-text .text-wrapper .button {
