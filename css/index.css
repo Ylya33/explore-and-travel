@@ -442,7 +442,7 @@ form {
 /*featured-destination*/
 
 .featured-destination {
-    padding-top: 136px;
+    padding-top: 133px;
     padding-bottom: 116px;
     position: relative;
 }
@@ -458,38 +458,36 @@ form {
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1094px;
+    max-width: 1103px;
     width: 100%;
     
 }
 
 .featured-destination .locations {
 
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 25px;
-  margin-top: 56px;
-  margin-left: 0;
-  margin-right: auto;
-  list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 25px;
+    margin-top: 46px;
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+    max-width: 1106px;
 }
 
-.featured-destination figure {
-    position: relative;
-    left: 56px;
-    top: -8px
-}
 
 .featured-destination figure img {
     width: 100%;
     border-radius: 8px;
     
 }
-
+.featured-destination figure {
+    position: relative;
+}
 .featured-destination figcaption {
     position: absolute;
     min-width: 120px;
-    left: 0;
+    left: 0px;
     bottom: 0;
     padding-top: 11px;
     padding-right: 20px;
@@ -559,8 +557,10 @@ form {
 .trending-stories .title-wrapper {
     display: flex;
     justify-content: space-between;
-    margin-left: 54px;
-    max-width: 1093px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1110px;
     
 }
 
@@ -590,7 +590,6 @@ form {
     font-weight: 400;
     font-size: 15px;
     line-height: 26px;
-    color: rgba(125, 121, 135, 1);
     margin-top: 13px;
     margin-bottom: 23px;
     
