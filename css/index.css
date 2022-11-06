@@ -151,29 +151,31 @@ a {
 }
 
 
-
 a.view-all {
+    position: relative;
     display: inline-block;
     font-size: 17px;
     line-height: 60px;
 }
+
 a.view-all::after {
     content: "";
-    position: absolute;
-    top: 25px;
-    right: 129px;
     display: block;
+    position: absolute;
+    top: 0px;
+    right: -6px;
     background-image: url(../img/arrow.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 50% 50%;
-    width: 25px;
-    height: 15px;
+    width: 6px;
+    height: 100%;
     transform: translateX(100%);
 } 
 
-a.view-all:hover {
-    padding-right: 5px;
+a.view-all:hover::after {
+    right: -11px;
+    
 }
 
 .element {
@@ -570,7 +572,7 @@ form {
 
 .trending-stories li img {
     width: 100%;
-    border-radius: 8px;
+    border-radius: 8px 8px 0px 0px;
     height: 233px;
     width: 261px;
     object-fit: cover;
