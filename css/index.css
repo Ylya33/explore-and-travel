@@ -1,10 +1,28 @@
 /*variables*/
 
 :root {
-    --main-font-family: 'Mulish';
-    --main-weight: 300;
-    --main-font-size: 17px;
-    --main-color: #7D7987;
+    --main-font-family: 'Inter';
+    --title-font-family: Playfair Display;
+    --secondary-font-family:'Mulish';
+    --main-weight: 700;
+    --big: 600;
+    --secondary: 500;
+    --medium: 400;
+    --small: 300;
+    --main-color: #FB8F1D;
+    --black: #000000;
+    --dark-blue: #202336;
+    --white: #FFFFFF;
+    --grey: #7D7987;
+    --orange: #fd9e39;
+    --dark-grey: #4A4C53;
+    --emerald: #042521;
+    --light-gray: #B8BECD;
+    --grey-green:rgba(128, 145, 142, 1);
+    --gray-saturated: #4a4d52;
+    --black-black: rgba(0, 0, 0, 0.85);
+    
+
 }
 /*base styles*/
 *{
@@ -30,125 +48,125 @@
 
 h1, .h1 {
     margin-bottom: 71px;
-    font-family: 'Playfair Display';
-    font-weight: 700;
+    font-family: var(--title-font-family);
+    font-weight: var(--main-weight);
     font-size: 64px;
     line-height: 80px;
-    color: #202336;
+    color: var(--dark-blue);
 }
 
 h2, .h2 {
-    font-family: 'Playfair Display';
-    font-weight: 700;
+    font-family: var(--title-font-family);
+    font-weight: var(--main-weight);
     font-size: 36px;
     line-height: 50px;
-    color: #000000; 
+    color: var(--black); 
 }
 
 h3, .h3 {
-    font-family: 'Inter';
-    font-weight: 600;
+    font-family: var(--main-font-family);
+    font-weight: var(--big);
     font-size: 22px;
     line-height: 27px;
-    color: #202336;
+    color: var(--dark-blue);
 }
 h4, .h4 {
-    font-family: 'Inter';
-    font-weight: 700;
+    font-family: var(--main-font-family);
+    font-weight: var(--main-weight);
     font-size: 19px;
     line-height: 30px;
-    color: #000000;
+    color: var(--black);
 }
 
 
 
 p {
-    font-family: 'Mulish';
-    font-weight: 300;
+    font-family: var(--secondary-font-family);
+    font-weight: var(--small);
     font-size: 17px;
     line-height: 30px;
-    color: #7D7987;
+    color: var(--grey);
 }
 
 figcaption {
-    font-family: 'Inter';
-    font-weight: 500;
+    font-family: var(--main-font-family);
+    font-weight: var(--secondary);
     font-size: 15px;
     line-height: 24px;
-    color: rgba(128, 145, 142, 1);
+    color: var(--grey-green);
 }
 figcaption span {
     display: block;
-    font-weight: 600;
+    font-weight: var(--big);
     font-size: 17px;
     line-height: 25px;
-    color: #042521;
+    color: var(--emerald);
 }
 
 blockquote, q {
-    font-family: 'Mulish';
-    font-weight: 400;
+    font-family: var(--secondary-font-family);
+    font-weight: var(--medium);
     font-size: 24px;
     line-height: 36px;
-    color: #000000;
+    color: var(--black)#;
 }
 
 cite {
-    font-family: 'Inter'; 
+    font-family: var(--main-font-family); 
     font-style: normal;
-    font-weight: 400;
+    font-weight: var(--medium);
     font-size: 18px;
     line-height: 48px;
-    color: rgba(0, 0, 0, 0.85);
+    color: var(--black-black);
 }
 cite span {
-    font-weight: 700;
+    font-weight: var(--main-weight);
     font-size: 22px;
     line-height: 48px;
-    color: #000000;
+    color: var(--black);
 }
 /* Style buttons */
 
 button, .button, input[type=button], input[type=submit] {
-     background-color: #FB8F1D;
+     background-color: var(--main-color);
      border-radius: 8px;
      text-decoration: none;
      cursor: pointer;
-     font-family: 'Inter';
+     font-family: var(--main-font-family);
      font-style: normal;
-     font-weight: 600;
+     font-weight: var(--big);
      font-size: 16px;
      line-height: 46px;
-     color: #FFFFFF;
+     color: var(--white);
      display: inline-block;
      padding: 0 38px;
      min-width: 164px;
-     border: 1px solid #FB8F1D;
+     border: 1px solid var(--main-color);
 
 }
 button:hover, .button:hover, input[type=button]:hover, input[type=submit]:hover {
-    border-color: #fd9e39;
-    background:  #fd9e39;
+    border-color: var(--orange);
+    background:  var(--orange);
 }
 
 button.transparent, .button.transparent, input[type=button].transparent, input[type=submit].transparent {
     background: transparent;
-    color: #FB8F1D;
+    color: var(--main-color);
     border-radius: 8px;
 }
 
 button.transparent:hover, .button.transparent:hover, input[type=button].transparent:hover, input[type=submit].transparent:hover, button.trip:hover {
-    background: #FB8F1D;
-    color: #FFFFFF;
+    background: var(--main-color);
+    color: var(--white);
 }
 
 a {
-    font-family: 'Inter';
-    font-weight: 600;
+    font-family: var(--main-font-family);
+    font-weight: var(--big);
     font-size: 15px;
     line-height: 0px;
     text-decoration: none;
-    color: #FB8F1D;
+    color: var(--main-color);
 }
 
 
@@ -205,11 +223,11 @@ select {
     border: 1px solid #AFB0B9;
     border-radius: 6px; 
     outline: none;
-    font-family: 'Inter';
-    font-weight: 400;
+    font-family: var(--main-font-family);
+    font-weight: var(--medium);
     font-size: 15px;
     line-height: 50px;
-    color: #4A4C53;
+    color: var(--dark-grey);
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -259,22 +277,22 @@ nav .buttons {
 }
 .menu li a {
     padding:  8px 17px;
-    font-family: 'Inter';
+    font-family: var(--main-font-family);
     font-style: normal;
-    font-weight: 400;
+    font-weight: var(--medium);
     font-size: 16px;
     line-height: 19px;
-    color: #B8BECD;
+    color: var(--light-gray);
 }
 
 .menu li a:hover {
-    color:#4a4d52;
+    color: var(--gray-saturated);
 }
 
 
 .menu li a.active { 
-    font-weight: 500;
-    color: #202336;
+    font-weight: var(--secondary);
+    color:var(--dark-blue) ;
 }
 
 .buttons li {
@@ -282,7 +300,7 @@ nav .buttons {
 }
 
 .buttons li button {
-    font-weight: 500;
+    font-weight: var(--secondary);
     min-width: 132px;
     padding: 0 36px;
     font-size: 15px;
@@ -325,7 +343,7 @@ form {
     left: 0;
     width: 32px;
     height: 2px;
-    background: #202336;
+    background: var(--dark-blue);
     border-radius: 4px;
 
 }
@@ -333,8 +351,8 @@ form {
     min-width: 180px;
     height: 52px;
     margin-top: 16px;
-    font-family: 'Mulish';
-    font-weight: 700;
+    font-family: var(--secondary-font-family);
+    font-weight: var(--main-weight);
     font-size: 17px;
 
 }
@@ -367,7 +385,7 @@ form {
 }
 .image-and-text-reverse {
     padding-top: 116px;
-    padding-bottom: 118px;
+    padding-bottom: 120px;
 }
 .image-and-text-reverse .section-container {
     flex-direction: row-reverse;
@@ -491,20 +509,21 @@ form {
     bottom: 0;
     padding-top: 11px;
     padding-right: 20px;
-    background: #FFFFFF;
+    background: var(--white);
     border-radius: 0px 6px 0px 0px;
 }
 
 /*testimonials*/
 
 .testimonials {
-    padding-top: 124px;
-    padding-bottom: 143px;
+    padding-top: 120px;
+    padding-bottom: 115.5px;
 }
 
 .testimonials .section-container {
     flex-direction: column;
     align-items: flex-start;
+    max-width: 1228px;
 }
 
 .testimonials-slider {
@@ -515,19 +534,19 @@ form {
     font-size: 0;
     background-image: url(../img/vector2.svg); 
     background-repeat: no-repeat;
-    background-color: #FFFFFF;
+    background-color: var(--white);
     width: 9px;
     height: 9px;
     border-radius: 50%;
     padding: 18px;
     min-width: 0;
     background-position: 50%;
-    border: 2px solid #000000;
+    border: 2px solid var(--black);
     
 }
 
 .slick-arrow:hover {
-    border-color: #000000;
+    border-color: var(--black);
 }
 .slick-prev {
     transform: scaleX(-1);
@@ -538,16 +557,18 @@ form {
     flex-direction: row-reverse;
 }
 .testimonials .text-wrapper {
-    margin-left: 56px;
-    margin-top: 94px;
+    margin-left: 0px;
+    margin-top: 95px;
 }
 .testimonials blockquote, q {
     margin-top: 29px;
     margin-bottom: 38px;
     max-width: 450px;
 }
-.container  img {
+.testimonials  .benefits {
     border-radius: 14px;
+    margin-right: 101px;
+    margin-top: 11px;
     
 }
 .testimonials .star{
@@ -561,7 +582,7 @@ form {
 /* trending-stories */
 
 .trending-stories {
-    padding-top: 143px;
+    padding-top: 115.5px;
     padding-bottom: 136px;
     position: relative;
 }
@@ -606,7 +627,7 @@ form {
 }
 
 .activities p {
-    font-weight: 400;
+    font-weight: var(--medium);
     font-size: 15px;
     line-height: 26px;
     margin-top: 13px;
