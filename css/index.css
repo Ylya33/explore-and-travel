@@ -528,9 +528,11 @@ form {
 
 .testimonials-slider {
     max-width: 100%;
+    position: relative;
 }
 
 .slick-arrow {
+    position: absolute;
     font-size: 0;
     background-image: url(../img/vector2.svg); 
     background-repeat: no-repeat;
@@ -547,9 +549,17 @@ form {
 
 .slick-arrow:hover {
     border-color: var(--black);
+    background-color: var(--white);
 }
 .slick-prev {
     transform: scaleX(-1);
+    left: 907px;
+    top: 509px;
+}
+
+.slick-next {
+    left: 967px;
+    bottom: 3px;
 }
 .testimonials .container {
     display: flex;
@@ -561,28 +571,38 @@ form {
     margin-top: 95px;
 }
 .testimonials blockquote, q {
-    margin-top: 29px;
+    margin-top: 31px;
     margin-bottom: 38px;
     max-width: 450px;
 }
 .testimonials  .benefits {
     border-radius: 14px;
     margin-right: 101px;
-    margin-top: 11px;
-    
+    margin-top: 58px;
+    width: 381px;
 }
+.testimonials  .Raja{
+    width: 379px;
+    height: 487px;
+    border-radius: 14px;
+    margin-right: 101px;
+    margin-top: 60px;  
+}
+ 
+
 .testimonials .star{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-column-gap: 15px;
     list-style: none;
     max-width: 190px;
+    margin-top: 46px;
 }
 
 /* trending-stories */
 
 .trending-stories {
-    padding-top: 115.5px;
+    padding-top: 165px;
     padding-bottom: 136px;
     position: relative;
 }
